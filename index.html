@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive tour and travel agency website design tutorial</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./style.css " />
+
+</head>
+
+<body>
+    <!-- Header section begins -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forgot password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">register now</a></p>
+
+
+        </form>
+    </div>
+
+
+    <!-- Home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>discover new places with us, adventure awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="./shortVideos/production.mp4"></span>
+            <span class="vid-btn" data-src="./shortVideos/product.mp4"></span>
+            <span class="vid-btn" data-src="./shortVideos/mountain.mp4"></span>
+            <span class="vid-btn" data-src="./shortVideos/road.mp4"></span>
+            <span class="vid-btn" data-src="./shortVideos/landscape.mp4"></span>
+
+        </div>
+
+        <div class="video-container">
+            <video src="shortVideos/production.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <!-- Home Section ends -->
+
+    <!-- Book section begins -->
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="images">
+                <img src="images/travella.png" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h2>where to</h2>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="text" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+    <!-- Book section ends -->
+
+    <!-- Packages section starts -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/maldives.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>maldives</h3>
+                    <p>The impulse to travel is one of the hopeful symptoms of life.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$1000.00<span>$1200.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/artem.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>sydney</h3>
+                    <p>The impulse to travel is one of the hopeful symptoms of life.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$400.00<span>$500.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/pexasad.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>hawaii</h3>
+                    <p>The impulse to travel is one of the hopeful symptoms of life.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$300.00<span>$350.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/paris.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>paris</h3>
+                    <p>The impulse to travel is one of the hopeful symptoms of life.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$130.00<span>$180.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/city.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>tokyo</h3>
+                    <p>The impulse to travel is one of the hopeful symptoms of life.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$180.00<span>$200.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/markus.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+                    <p>The impulse to travel is one of the hopeful symptoms of life.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$150.00<span>$220.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Packages section ends-->
+
+    <!-- Service section starts -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>All of the razzmatazz and jazz we hear about facilities and everything else doesn’t amount to a hill of beans. It’s customer experience that determines the longevity and endurance of these enterprises.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>“These small things – nutrition, place, climate, recreation, the whole casuistry of selfishness – are inconceivably more important than everything one has taken to be important so far.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p>Safety is not an intellectual exercise to keep us in work. It is a matter of life and death. It is the sum of our contributions to safety management that determines whether the people we work with live or die</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Through travel, I first became aware of the outside world; it was through travel that I found my own introspective way into becoming a part of it.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest</h3>
+                <p>Once you have tasted flight, you will forever walk the earth with your eyes turned skyward, for there you have been, and there you will always long to return.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventure</h3>
+                <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Service section ends -->
+
+    <!-- Gallery section starts -->
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/couple.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/asad-photo.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/woman.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/lovelies.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/bus.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/asad.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/town.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/brett.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>As you start exploring the world, you begin to understand that there are no “Those People.” It’s all “us.” Yes, there may be slight cultural differences, but at its core, all people are the same.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Gallery section ends -->
+
+    <!-- Review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/man.jpeg" alt="">
+                        <h3>john devin</h3>
+                        <p>Being an aviation fanatic, I just had to visit the new simulators center that was recently opened in Canton, and try it myself. It was a blast! The Sim center is well organized. Great facility with briefing room, nice waiting area
+                            and of course, friendly team that welcomes you in. But the sims are the main thing of course, and both are super great!</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/woman1.jpg" alt="">
+                        <h3>sylvia jones</h3>
+                        <p>Bought one hour for my daughter and one for myself. We both loved it. The people over there are super nice. I will definitely go back again. If you are a flight enthusiast, you won’t be disappointed.
+
+                        </p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/man1.jpg" alt="">
+                        <h3>robert darwin</h3>
+                        <p>The place when I arrived was great: it was clean and looked nice. The simulator was extremely realistic, with switches and levers and everything working the way it should. The instructor was great, very helpful and allowed for
+                            me to do some fun stuff while I was there. There was also a nice waiting area with snacks and everything if you're bringing someone along. I'd recommend this place over the Flight Experience as well in Burlington -- staff here
+                            are much nicer and from my experience you get to do more here than in the Flight Experience.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/woman2.jpg" alt="">
+                        <h3>cynthia lever</h3>
+                        <p>We "flew" in the 737 flight simulator, I fly almost weekly to DC usually aboard a 737 and the cockpit in the simulator was exactly like the real thing, incredible experience</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Review section ends-->
+
+    <!-- contact section begins -->
+    <section class="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+
+            <div class="image">
+                <img src="images/plane.png" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn" value="send message">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- brand section begins -->
+    <section class="brand-container">
+
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/logo1.jfif" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo2.jfif" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo3.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo4.jfif" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo5.jfif" alt=""></div>
+                <div class="swiper-slide"><img src="images/logo.jpg" alt=""></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- brand section ends -->
+
+    <!-- Footer section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odit fugiat aliquid labore, a porro sit. Vel sit aliquid officiis. Molestiae explicabo sit ducimus quo ipsa veritatis a eius omnis.
+                </p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">South-Africa</a>
+                <a href="#">britain</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">books</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedIn/a>
+
+            </div>
+        </div>
+
+        <h1 class="credit">created by <span>Mrs kehinde akinrotoye</span> | all rights reserved!</h1>
+    </section>
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./adventure.js "></script>
+</body>
+
+</html>
